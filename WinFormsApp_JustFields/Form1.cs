@@ -40,11 +40,18 @@ namespace WinFormsApp_JustFields
                     varInputString.AppendLine(varInput);
             }
             RTBOutput.Text = varInputString.ToString();
+            Clipboard.SetDataObject(varInputString.ToString());
             varInputString.Clear();
+            
         }
 
         private void BTNDemo_Click(object sender, EventArgs e)
         {
+            RTBInput.Clear();
+            RTBMainFilter.Clear();
+            RTBPreFilter.Clear();
+            RTBOutput.Clear();
+
             if(RTBInput != null && RTBInput.Text != null)
             {
                 RTBInput.Text += "Field1\n";

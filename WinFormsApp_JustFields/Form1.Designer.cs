@@ -31,13 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BTNDemo = new System.Windows.Forms.Button();
             this.BTNProcess = new System.Windows.Forms.Button();
             this.RTBOutput = new System.Windows.Forms.RichTextBox();
             this.RTBMainFilter = new System.Windows.Forms.RichTextBox();
             this.RTBPreFilter = new System.Windows.Forms.RichTextBox();
             this.RTBInput = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.BTNDemo = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -49,12 +54,17 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(759, 380);
+            this.tabControl1.Size = new System.Drawing.Size(759, 387);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.Controls.Add(this.richTextBox1);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.BTNDemo);
             this.tabPage1.Controls.Add(this.BTNProcess);
             this.tabPage1.Controls.Add(this.RTBOutput);
@@ -64,10 +74,60 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(751, 352);
+            this.tabPage1.Size = new System.Drawing.Size(751, 359);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(451, 6);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Output";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(227, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Main-filter";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(226, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Pre-filter";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Input";
+            // 
+            // BTNDemo
+            // 
+            this.BTNDemo.Location = new System.Drawing.Point(656, 23);
+            this.BTNDemo.Name = "BTNDemo";
+            this.BTNDemo.Size = new System.Drawing.Size(92, 41);
+            this.BTNDemo.TabIndex = 5;
+            this.BTNDemo.Text = "Demo";
+            this.BTNDemo.UseVisualStyleBackColor = true;
+            this.BTNDemo.Click += new System.EventHandler(this.BTNDemo_Click);
             // 
             // BTNProcess
             // 
@@ -116,31 +176,30 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(751, 352);
+            this.tabPage2.Size = new System.Drawing.Size(751, 549);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // BTNDemo
+            // richTextBox1
             // 
-            this.BTNDemo.Location = new System.Drawing.Point(656, 23);
-            this.BTNDemo.Name = "BTNDemo";
-            this.BTNDemo.Size = new System.Drawing.Size(92, 41);
-            this.BTNDemo.TabIndex = 5;
-            this.BTNDemo.Text = "Demo";
-            this.BTNDemo.UseVisualStyleBackColor = true;
-            this.BTNDemo.Click += new System.EventHandler(this.BTNDemo_Click);
+            this.richTextBox1.Location = new System.Drawing.Point(225, 305);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(422, 41);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(775, 406);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -156,5 +215,10 @@
         private TabPage tabPage2;
         private Button BTNProcess;
         private Button BTNDemo;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private RichTextBox richTextBox1;
     }
 }
