@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ericc\\source\\repos\\WinFormsApp_JustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj": {}
+    "C:\\WorkingFolder\\Win_FormAppJustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ericc\\source\\repos\\WinFormsApp_JustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj": {
+    "C:\\WorkingFolder\\Win_FormAppJustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ericc\\source\\repos\\WinFormsApp_JustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj",
+        "projectUniqueName": "C:\\WorkingFolder\\Win_FormAppJustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj",
         "projectName": "WinFormsApp_JustFields",
-        "projectPath": "C:\\Users\\ericc\\source\\repos\\WinFormsApp_JustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj",
+        "projectPath": "C:\\WorkingFolder\\Win_FormAppJustFields\\WinFormsApp_JustFields\\WinFormsApp_JustFields.csproj",
         "packagesPath": "C:\\Users\\ericc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ericc\\source\\repos\\WinFormsApp_JustFields\\WinFormsApp_JustFields\\obj\\",
+        "outputPath": "C:\\WorkingFolder\\Win_FormAppJustFields\\WinFormsApp_JustFields\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ericc\\AppData\\Roaming\\NuGet\\NuGet.Config",

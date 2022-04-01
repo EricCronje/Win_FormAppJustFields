@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BTNProcess = new System.Windows.Forms.Button();
             this.RTBOutput = new System.Windows.Forms.RichTextBox();
             this.RTBMainFilter = new System.Windows.Forms.RichTextBox();
             this.RTBPreFilter = new System.Windows.Forms.RichTextBox();
-            this.RTB_Input = new System.Windows.Forms.RichTextBox();
+            this.RTBInput = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.BTNProcess = new System.Windows.Forms.Button();
+            this.BTNDemo = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -54,11 +55,12 @@
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.Controls.Add(this.BTNDemo);
             this.tabPage1.Controls.Add(this.BTNProcess);
             this.tabPage1.Controls.Add(this.RTBOutput);
             this.tabPage1.Controls.Add(this.RTBMainFilter);
             this.tabPage1.Controls.Add(this.RTBPreFilter);
-            this.tabPage1.Controls.Add(this.RTB_Input);
+            this.tabPage1.Controls.Add(this.RTBInput);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -66,6 +68,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // BTNProcess
+            // 
+            this.BTNProcess.Location = new System.Drawing.Point(6, 305);
+            this.BTNProcess.Name = "BTNProcess";
+            this.BTNProcess.Size = new System.Drawing.Size(197, 41);
+            this.BTNProcess.TabIndex = 4;
+            this.BTNProcess.Text = "Process";
+            this.BTNProcess.UseVisualStyleBackColor = true;
+            this.BTNProcess.Click += new System.EventHandler(this.button1_Click);
             // 
             // RTBOutput
             // 
@@ -91,13 +103,13 @@
             this.RTBPreFilter.TabIndex = 1;
             this.RTBPreFilter.Text = "";
             // 
-            // RTB_Input
+            // RTBInput
             // 
-            this.RTB_Input.Location = new System.Drawing.Point(6, 23);
-            this.RTB_Input.Name = "RTB_Input";
-            this.RTB_Input.Size = new System.Drawing.Size(197, 262);
-            this.RTB_Input.TabIndex = 0;
-            this.RTB_Input.Text = "";
+            this.RTBInput.Location = new System.Drawing.Point(6, 23);
+            this.RTBInput.Name = "RTBInput";
+            this.RTBInput.Size = new System.Drawing.Size(197, 262);
+            this.RTBInput.TabIndex = 0;
+            this.RTBInput.Text = "";
             // 
             // tabPage2
             // 
@@ -109,15 +121,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // BTNProcess
+            // BTNDemo
             // 
-            this.BTNProcess.Location = new System.Drawing.Point(6, 305);
-            this.BTNProcess.Name = "BTNProcess";
-            this.BTNProcess.Size = new System.Drawing.Size(197, 41);
-            this.BTNProcess.TabIndex = 4;
-            this.BTNProcess.Text = "Process";
-            this.BTNProcess.UseVisualStyleBackColor = true;
-            this.BTNProcess.Click += new System.EventHandler(this.button1_Click);
+            this.BTNDemo.Location = new System.Drawing.Point(656, 23);
+            this.BTNDemo.Name = "BTNDemo";
+            this.BTNDemo.Size = new System.Drawing.Size(92, 41);
+            this.BTNDemo.TabIndex = 5;
+            this.BTNDemo.Text = "Demo";
+            this.BTNDemo.UseVisualStyleBackColor = true;
+            this.BTNDemo.Click += new System.EventHandler(this.BTNDemo_Click);
             // 
             // Form1
             // 
@@ -140,8 +152,9 @@
         private RichTextBox RTBOutput;
         private RichTextBox RTBMainFilter;
         private RichTextBox RTBPreFilter;
-        private RichTextBox RTB_Input;
+        private RichTextBox RTBInput;
         private TabPage tabPage2;
         private Button BTNProcess;
+        private Button BTNDemo;
     }
 }
