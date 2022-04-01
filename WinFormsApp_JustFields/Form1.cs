@@ -47,12 +47,24 @@ namespace WinFormsApp_JustFields
 
         private void BTNDemo_Click(object sender, EventArgs e)
         {
-            RTBInput.Clear();
-            RTBMainFilter.Clear();
-            RTBPreFilter.Clear();
-            RTBOutput.Clear();
+            ClearRTBBoxes();
+            if (CBPreSetList.Text.Length == 0)
+                LoadStaticDemo();
+            else
+                LoadPreSet(CBPreSetList.Text);
+        }
 
-            if(RTBInput != null && RTBInput.Text != null)
+        private void LoadPreSet(string preSetName)
+        {
+
+            LoadStaticDemo();
+        }
+
+        private void LoadStaticDemo()
+        {
+            
+
+            if (RTBInput != null && RTBInput.Text != null)
             {
                 RTBInput.Text += "Field1\n";
                 RTBInput.Text += "Field2\n";
@@ -69,6 +81,14 @@ namespace WinFormsApp_JustFields
             {
                 RTBMainFilter.Text += "var<item> = 0;\n";
             }
+        }
+
+        private void ClearRTBBoxes()
+        {
+            RTBInput.Clear();
+            RTBMainFilter.Clear();
+            RTBPreFilter.Clear();
+            RTBOutput.Clear();
         }
     }
 }

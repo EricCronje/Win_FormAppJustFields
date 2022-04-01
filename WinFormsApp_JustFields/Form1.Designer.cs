@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.CBPreSetList = new System.Windows.Forms.ComboBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +44,6 @@
             this.RTBPreFilter = new System.Windows.Forms.RichTextBox();
             this.RTBInput = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -54,12 +55,13 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(759, 387);
+            this.tabControl1.Size = new System.Drawing.Size(813, 387);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.Controls.Add(this.CBPreSetList);
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
@@ -74,10 +76,28 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(751, 359);
+            this.tabPage1.Size = new System.Drawing.Size(805, 359);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // CBPreSetList
+            // 
+            this.CBPreSetList.FormattingEnabled = true;
+            this.CBPreSetList.Items.AddRange(new object[] {
+            "Demo"});
+            this.CBPreSetList.Location = new System.Drawing.Point(659, 74);
+            this.CBPreSetList.Name = "CBPreSetList";
+            this.CBPreSetList.Size = new System.Drawing.Size(140, 23);
+            this.CBPreSetList.TabIndex = 11;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(225, 305);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(422, 41);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label4
             // 
@@ -123,9 +143,9 @@
             // 
             this.BTNDemo.Location = new System.Drawing.Point(656, 23);
             this.BTNDemo.Name = "BTNDemo";
-            this.BTNDemo.Size = new System.Drawing.Size(92, 41);
+            this.BTNDemo.Size = new System.Drawing.Size(143, 45);
             this.BTNDemo.TabIndex = 5;
-            this.BTNDemo.Text = "Demo";
+            this.BTNDemo.Text = "Load preset";
             this.BTNDemo.UseVisualStyleBackColor = true;
             this.BTNDemo.Click += new System.EventHandler(this.BTNDemo_Click);
             // 
@@ -176,24 +196,16 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(751, 549);
+            this.tabPage2.Size = new System.Drawing.Size(805, 359);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(225, 305);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(422, 41);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 406);
+            this.ClientSize = new System.Drawing.Size(837, 406);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -220,5 +232,6 @@
         private Label label2;
         private Label label1;
         private RichTextBox richTextBox1;
+        private ComboBox CBPreSetList;
     }
 }
